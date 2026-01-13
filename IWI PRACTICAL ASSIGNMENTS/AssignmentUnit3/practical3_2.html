@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Duplicate Values</title>
+</head>
+<body>
+
+<script>
+    var array = [10, 20, 10, 30, 40, 20, 50];
+    var uniqueArray = [];
+
+    for (var i = 0; i < array.length; i++) {
+        if (uniqueArray.indexOf(array[i]) === -1) {
+            uniqueArray.push(array[i]);
+        }
+    }
+
+    document.write("Original Array: " + array + "<br>");
+    document.write("Array after removing duplicates: " + uniqueArray);
+</script>
+
+</body>
+</html>
